@@ -11,7 +11,7 @@
 <span id="Novosibirsk_z430" style="font: menu;font-weight: bolder;font-size:80px"></span>
 <script src="//widget.time.is/ru.js"></script>
 <script>
-time_is_widget.init({Novosibirsk_z430:{template:"TIME<br>DATE", date_format:"dayname daynum.monthnum.yy"}});
+time_is_widget.init({Novosibirsk_z430:{template:"TIME<br>DATE", date_format:"dayname, dnum monthname year г"}});
 </script>
     </div>
 	<!--конец время-->
@@ -28,15 +28,21 @@ time_is_widget.init({Novosibirsk_z430:{template:"TIME<br>DATE", date_format:"day
 }
 #calendar3 thead tr:last-child {
   color: rgb(85, 85, 85);
+  border: 2px solid grey;
 }
 #calendar3 tbody td {
   color: rgb(44, 86, 122);
+  border: 2px solid grey;
 }
 #calendar3 tbody td:nth-child(n+6), #calendar3 .holiday {
   color: rgb(231, 140, 92);
+  border: 2px solid grey;
 }
 #calendar3 tbody td.today {
-  outline: 3px solid red;
+  outline: 5px solid red;
+}
+#calendar3 td {
+  border: 2px solid grey;
 }
 </style>
 
