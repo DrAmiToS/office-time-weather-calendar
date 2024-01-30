@@ -282,19 +282,17 @@ document.querySelector('#calendar3').onchange = function Kalendar3() {
         src="https://world-weather.ru/wwinformer.php?userid=bec858c92765e95de8554be5a73996c1"
       ></script>
 	    <script>
+// set background weather
 setTimeout(() => document.getElementById("ww-widget-adaptive").style.setProperty('background-color', '#ffffff00', 'important'), 1000);
 //reload page 00:00
 function autoRefresh() {
-var date = new Date();
-if(date.getHours() == 0 && date.getMinutes() == 0){
-	location.reload(true);
-	reloadstatus = true;
-}else{
-	reloadstatus = false;
+	var date = new Date();
+	if(date.getHours() == 0 && date.getMinutes() == 0){
+		location.reload(true);
+		reloadstatus = 'page reload!';
+	}
 }
-console.log(reloadstatus)
-}
-setInterval('autoRefresh()', 5000);
+setInterval('autoRefresh()', 60000); // update var date
       </script>
       <style>
         .ww-informers-box-854754{
