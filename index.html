@@ -333,19 +333,15 @@ setInterval('autoRefresh()', 60000); // update var date
             </ul>
     </div >
 <script>
-	$(document).ready(function() {
 
-	// Ваш код
-
-
-	function setstyle() {
+function setstyle() {
 $('#ww-widget-adaptive').style.setProperty('background-color', '#ffffff00', 'important');
 $('.ww-widget-adaptive-now-temp').style.setProperty('font-size','50px');
 $('.ww-widget-adaptive-week').style.setProperty('font-size','20px');
 $('.ww-widget-adaptive-now-city').style.setProperty('font-size','20px');
 console.log('weather style set');
-}
-setstyle()    
+};
+setstyle();    
 setTimeout('setstyle()', 5000);
-		});
+		
 </script>
