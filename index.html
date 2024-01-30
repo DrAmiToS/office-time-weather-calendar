@@ -285,17 +285,7 @@ document.querySelector('#calendar3').onchange = function Kalendar3() {
 	    <script>
 
 // set style weather
-function setstyle() {
-$('#ww-widget-adaptive').style.setProperty('background-color', '#ffffff00', 'important');
-$('.ww-widget-adaptive-now-temp').style.setProperty('font-size','50px');
-$('.ww-widget-adaptive-week').style.setProperty('font-size','20px');
-$('.ww-widget-adaptive-now-city').style.setProperty('font-size','20px');
-console.log('weather style set');
-}
-		    
-setTimeout('setstyle()', 5000);
-setTimeout('setstyle()', 15000);
-setTimeout('setstyle()', 25000);
+
 //reload page 00:00
 function autoRefresh() {
 	var date = new Date();
@@ -341,3 +331,14 @@ setInterval('autoRefresh()', 60000); // update var date
                     <li></li>
             </ul>
     </div >
+<script>
+	function setstyle() {
+$('#ww-widget-adaptive').style.setProperty('background-color', '#ffffff00', 'important');
+$('.ww-widget-adaptive-now-temp').style.setProperty('font-size','50px');
+$('.ww-widget-adaptive-week').style.setProperty('font-size','20px');
+$('.ww-widget-adaptive-now-city').style.setProperty('font-size','20px');
+console.log('weather style set');
+}
+		    
+setTimeout('setstyle()', 5000);
+</script>
