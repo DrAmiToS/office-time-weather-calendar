@@ -289,12 +289,12 @@ document.querySelector('#calendar3').onchange = function Kalendar3() {
 //reload page 00:00
 function autoRefresh() {
 	var date = new Date();
-	if(date.getHours() == 0 && date.getMinutes() == 0){
+	if(date.getMinutes() == 0){
 		location.reload(true);
 		reloadstatus = 'page reload!';
 	}
 }
-setInterval('autoRefresh()', 60000); // update var date
+setInterval('autoRefresh()', 1000); // update var date
       </script>
       <style>
         .ww-informers-box-854754{
